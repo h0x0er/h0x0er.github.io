@@ -19,7 +19,7 @@ layout: default
 </section>
 
 
-
+{% if site.showSearch %}
 <div class="search-article">
     <label for="search-input" aria-hidden="true">
         <!-- Magnifier -->
@@ -34,6 +34,8 @@ layout: default
     <input type="search" id="search-input" placeholder="Search for old logs here" aria-label="Search">
     <ul id="search-results"></ul>
 </div>
+
+{%endif%}
 
 <section class="posts" id="Blog">
     <h2>LOGS</h2>

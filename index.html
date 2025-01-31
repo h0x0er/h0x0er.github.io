@@ -1,28 +1,27 @@
 ---
 layout: default
 ---
+
 <section id="intro">
     <div class="flex-row-between">
         <h1>{{ site.greetings }}</h1>
-        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+        <button title="Toggle theme" id="theme-toggle" aria-label="Toggle dark/light mode" onclick="modeSwitcher()">
             <div></div>
         </button>
     </div>
+    
     <div class="bio">
-	    {{ site.description }}
+        {{ site.description }}
         <p>
-	    <a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/about/">> Learn more about me</a>
         </p>
     </div>
-
-
 </section>
-
 
 {% if site.showSearch %}
 <div class="search-article">
     <label for="search-input" aria-hidden="true">
-        <!-- Magnifier -->
+        <!-- Search Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-search">
@@ -31,18 +30,17 @@ layout: default
         </svg>
     </label>
 
-    <input type="search" id="search-input" placeholder="Search for old logs here" aria-label="Search">
+    <input type="search" id="search-input" placeholder="Search past posts" aria-label="Search blog posts">
     <ul id="search-results"></ul>
 </div>
+{% endif %}
 
-{%endif%}
-
-<section class="posts" id="Blog">
-    <h2>LOGS</h2>
+<section class="posts" id="blog">
+    <h2>Recent Posts</h2>
     <ul>
         {% for post in site.posts %}
         <li>
-		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         {% endfor %}

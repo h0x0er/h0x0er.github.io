@@ -6,7 +6,7 @@ tags: ebpf
 minute: 1
 ---
 
-### Snippet
+### Code
 
 ```c
 
@@ -50,8 +50,26 @@ struct {
 
 // === end
 
-
 ```
+
+
+### Reasoning
+
+In order to do tail calls, we need to
+
+- declare `prototype` of funcs to call
+- declare prog_array map with key=u32, values=signature_of_funcs 
+    - then fill map values
+
+- use `bpf_tail_call` to redirect flow to func of interest
+
+
+
+### Observation
+
+- same-context: caller and callee must have same ctx i.e program of same type
+- no-new-stack: callee uses caller's stack
+- no-return: callee doesn't returns to caller
 
 
 ### Refer

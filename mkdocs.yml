@@ -1,6 +1,7 @@
 site_name: Jatin's Experiments
 site_url: https://h0x0er.github.io
 site_author: jatin
+copyright: Copyright &copy; 2025 Jatin Kumar
 theme:
   name: material
   features:

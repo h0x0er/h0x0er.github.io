@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://h0x0er.github.io/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://h0x0er.github.io/blog/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://h0x0er.github.io/blog/2025/05/31/ebpf-tail-calls/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://h0x0er.github.io/blog/archive/2025/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://h0x0er.github.io/blog/category/ebpf/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+</urlset>

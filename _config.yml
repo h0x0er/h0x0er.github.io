@@ -1,7 +1,7 @@
 site: jatin
 title: jatin-experiments
-greetings: Jatin's Experiments 
-description: > 
+greetings: Jatin's Experiments
+description: >
 lang: en-US
 timezone: Asia/Kolkata
 # repo: https://github.com/h0x0er/blog # site repo [optional]
@@ -32,10 +32,7 @@ permalink: pretty
 # url: "http://localhost:4000" #
 # baseurl: "" #
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+markdown: GFM
 
 exclude:
   - .jekyll-cache

@@ -8,6 +8,11 @@ categories:
 
 # eBPF: Tail Calls
 
+### Objective
+
+- To learn performing tail-calls in eBPF
+
+
 ### Code
 
 ```c linenums="1"

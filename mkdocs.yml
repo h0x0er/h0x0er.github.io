@@ -5,10 +5,6 @@ copyright: Copyright &copy; 2025 JATIN KUMAR
 
 nav:
   - index.md
-  - "About Me":
-    - about.md
-    - Reaching me: social.md
-
   - Logs:
       - blog/index.md
   - Experiments:
@@ -17,6 +13,8 @@ nav:
       # - Observations:
           # - experiments/observations/index.md
           # - CTF: experiments/observations/ctf.md
+  - About: 
+    - index.md
 
 theme:
   name: material

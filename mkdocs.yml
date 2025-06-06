@@ -1,12 +1,14 @@
 site_name: Unnamed Memories
-site_url: https://h0x0er.github.io
+site_url: https://h0x0er.github.io/
 site_author: jatin
 copyright: Copyright &copy; 2025 JATIN KUMAR
 
 nav:
+  - index.md
   - "About Me":
-      - about.md
-      - Reaching me: social.md
+    - about.md
+    - Reaching me: social.md
+
   - Logs:
       - blog/index.md
   - Experiments:

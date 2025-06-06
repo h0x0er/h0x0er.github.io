@@ -1,15 +1,20 @@
-site_name: Jatin's Experiments
+site_name: Unnamed Memories
 site_url: https://h0x0er.github.io
 site_author: jatin
-copyright: Copyright &copy; 2025 Jatin Kumar
+copyright: Copyright &copy; 2025 JATIN KUMAR
 
 nav:
- - index.md
- - Blog:
-   - blog/index.md
- - Observations:
-   - observations.md
-
+  - "About Me":
+      - about.md
+      - Reaching me: social.md
+  - Logs:
+      - blog/index.md
+  - Experiments:
+      - experiments/index.md
+      # - eBPF: experiments/exp_ebpf.md
+      # - Observations:
+          # - experiments/observations/index.md
+          # - CTF: experiments/observations/ctf.md
 
 theme:
   name: material
@@ -66,6 +71,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

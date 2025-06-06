@@ -10,14 +10,13 @@ categories:
 
 ### Objective
 
-- To learn performing tail-calls in eBPF
+- to understand performing tail-calls in eBPF
 
 
 ### Code
 
-```c linenums="1"
+```c title="programs.h" linenums="1"
 
-// === program.h
 
 SEC("cgroup_skb/egress")
 long egress2(struct __sk_buff* ctx){
@@ -32,10 +31,9 @@ long egress1(struct __sk_buff* ctx){
     return SK_PASS;
 }
 
-// ==end
+```
 
-
-// ==== maps.h
+```c title="maps.h" linenums="1"
 
 // declare the index in array to use for tail-called function
 #define TAIL_CALL_EGRESS_2 0 
@@ -54,24 +52,22 @@ struct {
 		[TAIL_CALL_EGRESS_2] = (void *)&egress2, // filling values
 	},
 };  
-// === end
-
 ```
 
 
 ### Reasoning
 
-In order to do tail calls, we need to
+In order to perform tail calls, we need to
 
 - declare `prototype` of funcs to call
-- declare prog_array map with key=u32, values=signature_of_funcs 
-    - then fill map values
-
+- declare map: `prog_array map` with key=u32, values=signature_of_funcs 
+- fill map:
+    - can be done in userspace as well in kernelspace
 - use `bpf_tail_call` to redirect flow to func of interest
 
 
 
-### Observation
+### Observations
 
 - same-context: caller and callee must have same ctx i.e program of same type
 - no-new-stack: callee uses caller's stack
@@ -79,6 +75,7 @@ In order to do tail calls, we need to
 
 
 ### Refer
+
 - https://docs.ebpf.io/linux/helper-function/bpf_tail_call/
 
 - real_world_example: https://github.com/cilium/tetragon/blob/c51dd078bfb568075ba1fb287f2447f29f709073/bpf/process/bpf_generic_rawtp.c#L27-L45

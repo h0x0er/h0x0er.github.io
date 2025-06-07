@@ -7,14 +7,16 @@ nav:
   - index.md
   - Logs:
       - blog/index.md
-  - Experiments:
-      - experiments/index.md
-      # - eBPF: experiments/exp_ebpf.md
-      # - Observations:
-          # - experiments/observations/index.md
-          # - CTF: experiments/observations/ctf.md
-  - About: 
-    - index.md
+  - Debug: debug.md
+
+  # - Experiments:
+  #     - experiments/index.md
+  # - eBPF: experiments/exp_ebpf.md
+  # - Observations:
+  # - experiments/observations/index.md
+  # - CTF: experiments/observations/ctf.md
+  - About:
+      - index.md
 
 theme:
   name: material

@@ -33,7 +33,7 @@ theme:
     - content.code.select
     - content.tooltips
 
-    - navigation.footer
+    # - navigation.footer
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
@@ -94,3 +94,13 @@ plugins:
       pagination_per_page: 5
       blog_toc: true
   - meta
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/jatin-kumar-0a3755168/
+
+    - icon: fontawesome/brands/github 
+      link: https://github.com/h0x0er

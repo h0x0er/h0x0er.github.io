@@ -1,22 +1,22 @@
 ---
 title: ""
+hide:
+    - footer
 ---
 
 
-__Heartly WELCOME :smiley:__
+Hello :wave:.
 
+Heartly Welcome.
 
-I am  __Jatin__
+I am  __Jatin Kumar__.  Currently working as `Software Engineer` [@StepSecurity Inc.](https://www.stepsecurity.io)
 
-- __Software Engineer @[StepSecurity](https://www.stepsecurity.io)__ [A cybersecurity startup]
+The objecive of `Unnamed Memories` is to act as centralized repo of notes for me.
 
-Working on:
+On Job, I spent most of my time creating, debugging & improving `Agents`.
+They are EDR like softwares that are purpose built for securing CI/CD pipeline runners from `SolarWinds` like software-supply-chain attacks. [Harden-Runner](https://github.com/step-security/harden-runner) is one of the widely used open-source variant specifically developed for `Github Actions.`
 
-- eBPF based agents for securing CI/CD pipelines
+Off Job, I spent time exploring, reading or experimenting.
 
-
-Reach-out on:
-
-- :fontawesome-brands-linkedin: [__Linkedin__](https://www.linkedin.com/in/jatin-kumar-0a3755168/) | :fontawesome-brands-github: [__Github__](https://github.com/h0x0er/) 
-
+Thanks.
 

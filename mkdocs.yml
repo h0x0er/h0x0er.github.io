@@ -7,7 +7,11 @@ nav:
   - index.md
   - Logs:
       - blog/index.md
-  - Debug: debug.md
+  - Debug: 
+    # - debug/index.md
+    - debug/ebpf.md
+    - debug/kubernetes.md
+  
 
   # - Experiments:
   #     - experiments/index.md
@@ -56,7 +60,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: green
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -77,6 +81,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - blog:

@@ -24,6 +24,7 @@ nav:
 
 theme:
   name: material
+  # custom_dir: overrides
   features:
     - announce.dismiss
     - content.action.edit
@@ -93,6 +94,7 @@ plugins:
       post_date_format: full
       pagination_per_page: 5
       blog_toc: true
+      post_excerpt: "required"
   - meta
 
 

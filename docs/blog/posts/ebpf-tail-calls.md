@@ -12,6 +12,7 @@ categories:
 
 - to understand performing tail-calls in eBPF
 
+<!-- more -->
 
 ### Reasoning
 

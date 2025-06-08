@@ -1,5 +1,6 @@
 ---
 date: 2025-06-08
+more: "To understand ebpf tails calls"
 authors:
  - jatin
 categories:
@@ -8,10 +9,12 @@ categories:
 
 # eBPF: Tail calls (Part-2)
 
+
 ### Objective
 
 - to understand/learn passing data between tail-called functions
 
+<!-- more -->
 !!! note "Why ?"
     There are use-cases where tail-called function must know processing performed in previous function.
 

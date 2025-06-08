@@ -25,16 +25,6 @@ In order to perform tail calls, we need to
 - use `bpf_tail_call` to redirect flow to func of interest
 
 
-
-### Observations
-
-- same-cpu: callee function is executed by same-cpu
-- same-context: caller and callee must have same ctx i.e program of same type
-- no-new-stack: callee uses caller's stack
-- no-return: callee doesn't returns to caller
-
-
-
 ### Code
 
 ```c title="programs.h" linenums="1"
@@ -78,6 +68,15 @@ struct {
 	},
 };  
 ```
+
+
+### Observations
+
+- same-cpu: callee function is executed by same-cpu
+- same-context: caller and callee must have same ctx i.e program of same type
+- no-new-stack: callee uses caller's stack
+- no-return: callee doesn't returns to caller
+
 
 
 ### Refer

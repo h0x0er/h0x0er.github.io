@@ -6,7 +6,7 @@ categories:
  - ebpf
 ---
 
-# eBPF: Tail Calls (Part-2)
+# eBPF: Tail calls (Part-2)
 
 ### Objective
 

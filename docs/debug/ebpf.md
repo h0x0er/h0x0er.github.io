@@ -30,4 +30,17 @@ sudo bpftool prog load ./sample.o /sys/fs/bpf/sample
 ```
 
 
+#### :arrow_right: for `bpf_printk()` logs
+
+```bash linenums="1"
+# to clear previous logs
+sudo echo > /sys/kernel/debug/tracing/trace
+
+# print logs
+sudo cat /sys/kernel/debug/tracing/trace_pipe
+```
+
+- [Refer](https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly)
+
+
 ---

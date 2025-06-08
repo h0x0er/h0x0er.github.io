@@ -5,6 +5,8 @@ title: eBPF
 
 #### :arrow_right: for grabbing bpftool
 
+When `sudo apt install bpftool` doesn't work 
+
 ```bash linenums="1"
 
 docker pull calico/bpftool

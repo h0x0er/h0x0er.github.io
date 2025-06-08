@@ -81,6 +81,10 @@ struct {
 
 ### Refer
 
+- https://docs.ebpf.io/linux/program-type/BPF_PROG_TYPE_CGROUP_SKB/
+
+- https://docs.ebpf.io/linux/concepts/tail-calls/
+
 - https://docs.ebpf.io/linux/helper-function/bpf_tail_call/
 
 - real_world_example: https://github.com/cilium/tetragon/blob/c51dd078bfb568075ba1fb287f2447f29f709073/bpf/process/bpf_generic_rawtp.c#L27-L45

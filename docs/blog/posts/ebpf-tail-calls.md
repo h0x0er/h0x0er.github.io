@@ -6,28 +6,52 @@ categories:
  - ebpf
 ---
 
-# eBPF: Tail Calls
+# eBPF: Tail Calls (Part-1)
 
 ### Objective
 
 - to understand performing tail-calls in eBPF
 
 
+### Reasoning
+
+In order to perform tail calls, we need to
+
+- declare `prototype` of funcs to call
+- declare map: `prog_array map` with key=u32, values=signature_of_funcs 
+- fill map:
+    - can be done in userspace as well in kernelspace
+- use `bpf_tail_call` to redirect flow to func of interest
+
+
+
+### Observations
+
+- same-cpu: callee function is executed by same-cpu
+- same-context: caller and callee must have same ctx i.e program of same type
+- no-new-stack: callee uses caller's stack
+- no-return: callee doesn't returns to caller
+
+
+
 ### Code
 
 ```c title="programs.h" linenums="1"
 
+#include "maps.h" hl_lines="13 14"
 
+// Called function
 SEC("cgroup_skb/egress")
 long egress2(struct __sk_buff* ctx){
     bpf_printk("[egress2] Someone called me");
     return SK_PASS;
 }
 
+// Initial function
 SEC("cgroup_skb/egress")
 long egress1(struct __sk_buff* ctx){
     bpf_printk("[egress1] Calling egress2");
-    bpf_printk(ctx, &tail_programs, TAIL_CALL_EGRESS_2)
+    bpf_tail_call(ctx, &tail_programs, TAIL_CALL_EGRESS_2)
     return SK_PASS;
 }
 
@@ -53,25 +77,6 @@ struct {
 	},
 };  
 ```
-
-
-### Reasoning
-
-In order to perform tail calls, we need to
-
-- declare `prototype` of funcs to call
-- declare map: `prog_array map` with key=u32, values=signature_of_funcs 
-- fill map:
-    - can be done in userspace as well in kernelspace
-- use `bpf_tail_call` to redirect flow to func of interest
-
-
-
-### Observations
-
-- same-context: caller and callee must have same ctx i.e program of same type
-- no-new-stack: callee uses caller's stack
-- no-return: callee doesn't returns to caller
 
 
 ### Refer

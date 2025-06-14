@@ -20,7 +20,9 @@ nav:
   # - experiments/observations/index.md
   # - CTF: experiments/observations/ctf.md
   - About:
-      - index.md
+    - index.md
+    # - Experiences: exp.md
+    - Interests: interest.md
 
 theme:
   name: material
@@ -70,6 +72,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.blocks.caption
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

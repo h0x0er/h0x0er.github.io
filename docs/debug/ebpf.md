@@ -9,13 +9,13 @@ When `sudo apt install bpftool` doesn't work
 
 ```bash linenums="1"
 
-docker pull calico/bpftool
+# For latest build follow below link
+# https://github.com/libbpf/bpftool/releases
 
-find /var/lib/docker/overlay2 -type f -iname "bpftool"
-
-cp <path_from_previous_step> /usr/bin
-
+wget https://github.com/libbpf/bpftool/releases/download/v7.5.0/bpftool-v7.5.0-amd64.tar.gz
+tar xf bpftool*
 chmod +x /usr/bin/bpftool
+./bpftool
 
 ```
 

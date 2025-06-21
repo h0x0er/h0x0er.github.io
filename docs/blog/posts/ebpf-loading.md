@@ -11,7 +11,7 @@ categories:
 
 ## Objective
 
-- to loading of compiled eBPF program in different kernels within `Github Actions`
+- to load compiled eBPF program in different kernels within `Github Actions`
     - for testing the compatibility of code on different kernels
 
 <!-- more -->

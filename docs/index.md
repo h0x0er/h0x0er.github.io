@@ -21,3 +21,4 @@ Thanks.
 !!! note
     `Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.
 
+Reach out to me at [Linkedin...](https://www.linkedin.com/in/jatin-kumar-0a3755168/)

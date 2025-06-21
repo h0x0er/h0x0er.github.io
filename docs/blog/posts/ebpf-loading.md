@@ -1,6 +1,5 @@
 ---
 date: 2025-06-21
-draft: true
 authors:
  - jatin
 categories:
@@ -12,7 +11,8 @@ categories:
 
 ## Objective
 
-- to test loading of compiled eBPF program in different kernels within `Github Actions`
+- to loading of compiled eBPF program in different kernels within `Github Actions`
+    - for testing the compatibility of code on different kernels
 
 <!-- more -->
 
@@ -48,7 +48,7 @@ These differ by:
 
 
 !!! Note
-    Checkout: [https://github.com/h0x0er/ebpf-playground/blob/main/.github/workflows/load-lvh.yml](https://github.com/h0x0er/ebpf-playground/blob/main/.github/workflows/load-lvh.yml)
+    Try forking the [ebpf-playground](https://github.com/h0x0er/ebpf-playground) and triggering the workflows.
 
 ```yaml title="load.yml" linenums="1"
 name: LVH Load
@@ -68,20 +68,19 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # for kernel tags: https://quay.io/repository/lvh-images/kind?tab=tags
-        kernel: 
-          - "6.6-20250616.013250-amd64"
+        kernel: # (1)!
+          - "6.6-20250616.013250-amd64" # (2)!
           - "5.15-20250616.013250-amd64"
           - "5.10-20250610.043823-amd64"
           
     timeout-minutes: 10
     steps:
 
+        # (3)!
       - run: | 
-          # download the compiled obj 
           wget --quiet https://github.com/cilium/ebpf/raw/refs/heads/main/examples/cgroup_skb/bpf_bpfel.o  
           ls -lah
-      
+      # (4)!
       - name: Provision LVH VMs
         uses: cilium/little-vm-helper@v0.0.23
         with:
@@ -100,20 +99,26 @@ jobs:
             cd /host
             ls -lah
 
-            # (1)
             echo ""
             sudo bpftool prog load ./bpf_bpfel.o /sys/fs/bpf/test && echo "Load Success"
 
 ```
 
-1. load program using bpftool
+1. Visit [here](https://quay.io/repository/lvh-images/kind?tab=tags) for getting kernel tags
+2. List of kernel images to test against.
+3. Downloading the eBPF object to load
+4. !!! note
+    1. Using LVH to provision virtual-machine with given kernel
+    2. Mounting the `$PWD` inside VM at `/host`
+    3. Loading the program
+
 
 
 
 ## Refer
 
-- https://github.com/cilium/little-vm-helper
-- https://github.com/cilium/little-vm-helper-images/blob/main/_data/images.json
-- :arrow_right: https://quay.io/repository/lvh-images/kind?tab=tags
-
-- https://github.com/h0x0er/ebpf-playground
+- [https://github.com/cilium/little-vm-helper](https://github.com/cilium/little-vm-helper)
+- [https://github.com/cilium/little-vm-helper-images/blob/main/_data/images.json](https://github.com/cilium/little-vm-helper-images/blob/main/_data/images.json)
+- :arrow_right: [https://quay.io/repository/lvh-images/kind?tab=tags](https://quay.io/repository/lvh-images/kind?tab=tags)
+- [https://github.com/h0x0er/ebpf-playground](https://github.com/h0x0er/ebpf-playground)
+- [https://github.com/cilium/ebpf](https://github.com/cilium/ebpf)

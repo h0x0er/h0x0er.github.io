@@ -7,11 +7,10 @@ nav:
   - index.md
   - Logs:
       - blog/index.md
-  - Debug: 
-    # - debug/index.md
-    - debug/ebpf.md
-    - debug/kubernetes.md
-  
+  - Debug:
+      # - debug/index.md
+      - debug/ebpf.md
+      - debug/kubernetes.md
 
   # - Experiments:
   #     - experiments/index.md
@@ -20,9 +19,9 @@ nav:
   # - experiments/observations/index.md
   # - CTF: experiments/observations/ctf.md
   - About:
-    - index.md
-    # - Experiences: exp.md
-    - Interests: interest.md
+      - index.md
+      # - Experiences: exp.md
+      - Interests: interest.md
 
 theme:
   name: material
@@ -31,10 +30,11 @@ theme:
     - announce.dismiss
     - content.action.edit
     - content.action.view
-    
+
     - content.code.annotate
     - content.code.copy
     - content.code.select
+
     - content.tooltips
 
     # - navigation.footer
@@ -49,6 +49,10 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
+
+  icon:
+    annotation: material/thought-bubble
+
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -101,12 +105,10 @@ plugins:
       post_excerpt: "required"
   - meta
 
-
-
 extra:
   social:
-    - icon: fontawesome/brands/linkedin 
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jatin-kumar-0a3755168/
 
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/h0x0er

@@ -14,13 +14,10 @@ categories:
 
 - to test loading of compiled eBPF program in different kernels within `Github Actions`
 
-!!! note "Why ?"
-    
-
+<!-- more -->
 
 
 ## Reasoning
-
 
 ### LVH
 
@@ -45,8 +42,6 @@ These differ by:
   - [userspace setup](https://github.com/cilium/little-vm-helper-images/blob/a9fad6b573f8ccb8f40eacb45268ef1b19073ba6/_data/images.json#L18-L33).
 
   - [packages](https://github.com/cilium/little-vm-helper-images/blob/a9fad6b573f8ccb8f40eacb45268ef1b19073ba6/_data/images.json#L3-L18): the kind of packages available inside them, e.g in some `dig` is not available.
-
-<!-- more -->
 
 
 ## Code

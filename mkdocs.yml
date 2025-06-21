@@ -112,3 +112,7 @@ extra:
 
     - icon: fontawesome/brands/github
       link: https://github.com/h0x0er
+
+  analytics:
+    provider: google
+    property: G-V6KWCXGLJD

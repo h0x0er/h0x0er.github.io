@@ -62,7 +62,7 @@ long egress3(struct __sk_buff* ctx){
         return SK_PASS;
     }
 
-    // Use tail_context values (1)
+    // Use tail_context values
     bpf_printk("[egress3] first=%d second=%d", ctx2->value_from_1, ctx2->value_from_1);
 
     return SK_PASS;
@@ -109,7 +109,6 @@ long egress1(struct __sk_buff* ctx){
 }
 
 ```
-1.  test annotate
 
 ```c title="maps.h" linenums="1"
 

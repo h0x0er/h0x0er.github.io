@@ -36,17 +36,29 @@ sudo bpftool prog load ./sample.o /sys/fs/bpf/sample
 # to clear previous logs
 sudo echo > /sys/kernel/debug/tracing/trace
 
-# for k8s-debug pod
-echo > /host/sys/kernel/debug/tracing/trace
-
 # print logs
 sudo cat /sys/kernel/debug/tracing/trace_pipe
 
 # for k8s-debug pod
+echo > /host/sys/kernel/debug/tracing/trace
 cat /host/sys/kernel/debug/tracing/trace_pipe
+
 ```
 
 - [Refer](https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly)
+
+
+#### :arrow_right: for checking ebpf-lsm & kprobe-override status
+
+```bash linenums="1"
+
+# for ebpf-lsm
+cat /sys/kernel/security/lsm
+
+# for override
+cat /boot/config-`uname -r` | grep CONFIG_BPF_KPROBE_OVERRIDE
+
+```
 
 
 ---

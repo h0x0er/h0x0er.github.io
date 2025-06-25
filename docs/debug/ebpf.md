@@ -48,7 +48,7 @@ cat /host/sys/kernel/debug/tracing/trace_pipe
 - [Refer](https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly)
 
 
-#### :arrow_right: for checking ebpf-lsm & kprobe-override status
+#### :arrow_right: for ebpf-lsm & kprobe-override status
 
 ```bash linenums="1"
 
@@ -59,6 +59,4 @@ cat /sys/kernel/security/lsm
 cat /boot/config-`uname -r` | grep CONFIG_BPF_KPROBE_OVERRIDE
 
 ```
-
-
 ---

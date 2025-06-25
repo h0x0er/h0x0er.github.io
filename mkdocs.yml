@@ -21,7 +21,7 @@ nav:
   - About:
       - index.md
       # - Experiences: exp.md
-      - Interests: interest.md
+      - Achievements: achievs.md
 
 theme:
   name: material

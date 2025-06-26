@@ -21,7 +21,7 @@ nav:
   - About:
       - index.md
       # - Experiences: exp.md
-      - Achievements: achievs.md
+      - Achievements: achievements.md
 
 theme:
   name: material
@@ -52,7 +52,8 @@ theme:
 
   icon:
     annotation: material/thought-bubble
-
+    logo: material/thought-bubble
+  favicon: images/cloud.png
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

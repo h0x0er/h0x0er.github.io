@@ -20,7 +20,7 @@ nav:
   # - CTF: experiments/observations/ctf.md
   - About:
       - index.md
-      # - Experiences: exp.md
+      - "Work Experiences": experiences.md
       - Achievements: achievements.md
 
 theme:
@@ -64,14 +64,14 @@ theme:
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-off
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: green
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/lightbulb-on
         name: Switch to system preference
 
 markdown_extensions:

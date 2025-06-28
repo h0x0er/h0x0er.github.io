@@ -6,18 +6,18 @@ hide:
 
 Hello :wave: 
 
-Heartly Welcome :exclamation:
+Heartily Welcome :exclamation:
 
-I am  __Jatin Kumar__.  Currently working as `Software Engineer` [@StepSecurity Inc.](https://www.stepsecurity.io)
+I am  __JATIN KUMAR__.  Currently working as **Software Engineer [@StepSecurity Inc.](https://www.stepsecurity.io)**
 
 At StepSecurity, I spent most of my time creating, debugging & improving `Agents`.
 They are EDR like softwares that are purpose built for securing CI/CD pipeline runners from `SolarWinds` like software-supply-chain attacks. [Harden-Runner](https://github.com/step-security/harden-runner) is one of the widely used open-source variant specifically developed for `Github Actions.`
 
-When not on job, I spend time exploring, reading or experimenting.
+OFF-Work, I explore, read or experiment.
 
 Thanks.
 
-Reach out to me at [Linkedin...](https://www.linkedin.com/in/jatin-kumar-0a3755168/) :rocket:
+Reach out to me on [Linkedin...](https://www.linkedin.com/in/jatin-kumar-0a3755168/) :rocket:
 
 !!! note
     `Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.

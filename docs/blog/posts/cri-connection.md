@@ -19,7 +19,7 @@ categories:
 
 ---
 
-## :thinking: Reasoning
+##  Reasoning
 
 ???+ Note
     Code snippets are take from open-source [tetragon](https://github.com/cilium/tetragon) and [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md) projects.

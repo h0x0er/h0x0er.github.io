@@ -44,7 +44,7 @@ Most of the times these are in a well-known location such as `/var/run` or `/run
 
 In projects that I explored, well-known paths are hardcoded for flexibility. 
 
-During runtime, code iterate over these paths, tries to make a connection and returns the corrosponding service, if it was success.
+During runtime, code iterate over these paths, tries to make a connection and returns the corresponding service, if it was success.
 
 Tetragon contains some hardcoded default sock-paths. [[source]](https://github.com/cilium/tetragon/blob/50a1d08e471d2fdbabff0416ba0c314769bb4c13/pkg/cri/cri.go#L22)
 ```go linenums="1"

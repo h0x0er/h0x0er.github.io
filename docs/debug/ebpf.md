@@ -45,7 +45,7 @@ cat /host/sys/kernel/debug/tracing/trace_pipe
 
 ```
 
-- [Refer](https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly)
+- <https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly>
 
 
 #### :arrow_right: for ebpf-lsm & kprobe-override status

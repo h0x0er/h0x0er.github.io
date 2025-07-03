@@ -2,12 +2,12 @@
 
 ### Google VRP 
 
-**Profile:** [https://bughunters.google.com/profile/1db4e6b5-400a-4250-8152-88c548e36f24](https://bughunters.google.com/profile/1db4e6b5-400a-4250-8152-88c548e36f24)
+**Profile:** <https://bughunters.google.com/profile/1db4e6b5-400a-4250-8152-88c548e36f24>
 
 **Valid Public Reports**
 
-- [https://bughunters.google.com/reports/vrp/jALhjoMUo](https://bughunters.google.com/reports/vrp/jALhjoMUo)
-- [https://bughunters.google.com/reports/vrp/VZcSaHcyp](https://bughunters.google.com/reports/vrp/VZcSaHcyp)
+- <https://bughunters.google.com/reports/vrp/jALhjoMUo>
+- <https://bughunters.google.com/reports/vrp/VZcSaHcyp>
 
 
 

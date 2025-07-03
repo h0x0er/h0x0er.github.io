@@ -4,7 +4,7 @@ icon: material/kubernetes
 ---
 
 !!! note "Official Doc"
-    https://kubernetes.io/docs/tasks/debug/debug-cluster/
+    <https://kubernetes.io/docs/tasks/debug/debug-cluster/>
 
 #### :arrow_right: for debugging node with privileged pod
 
@@ -13,8 +13,8 @@ nodeName=$(kubectl get node -o name)
 kubectl debug $nodeName -it --image=ubuntu --profile=sysadmin
 ```
 
-- [Refer](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/)
+- <https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/>
 
 #### :arrow_right: for debugging node with crictl
 
-- [Refer](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/)
+- <https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/>

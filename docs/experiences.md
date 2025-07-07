@@ -1,11 +1,11 @@
 
-## **[StepSecurity Inc.](https://www.stepsecurity.io/company) | Software Engineer (Full-time)**
+## **Software Engineer (Full-time) | [StepSecurity Inc.](https://www.stepsecurity.io/company)**
 
 
 > :timer: **July-2023 to Present**
 
     
-- Research and Development of eBPF-based solutions for `network, process and file visibility` and `policy-enforcement`.
+- Responsible for `R&D` of eBPF-based solutions for `network, process and file visibility` and `policy-enforcement`.
 
 - Designed, developed and maintaining a portable eBPF based module with following capabilities, 
     - traces every `outgoing network-packet`
@@ -20,7 +20,7 @@
 
 ---
 
-## **[StepSecurity Inc.](https://www.stepsecurity.io/company) | Software Developer (Part-Time)**
+## **Software Developer (Part-Time) | [StepSecurity Inc.](https://www.stepsecurity.io/company) |**
 
 > :timer: **April-2022 to June-2023**
 
@@ -38,7 +38,7 @@
 
 ---
 
-## **[StepSecurity Inc.](https://www.stepsecurity.io/company) | Software Developer (Intern)**
+## **Software Developer (Intern) | [StepSecurity Inc.](https://www.stepsecurity.io/company)**
 
 
 > :timer: **January-2022 to March-2022**

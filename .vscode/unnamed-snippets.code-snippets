@@ -33,7 +33,27 @@
 			"---",
 			"## Reasoning\n\n",
 			"## Refer\n\n",
+		]
+	},
 
+
+	"browse full source-code link": {
+		"scope": "markdown",
+		"prefix": "browse-source-link",
+		"body": "**[Browse full source-code]($1)**"
+	},
+
+	"source link": {
+		"scope": "markdown",
+		"prefix": "source-link",
+		"body": "**[[Source]]($1)**"
+	},
+	"source annotation": {
+		"scope": "markdown",
+		"prefix": "source-annotate",
+		"body": [
+			"???+ \"Source\"",
+			"\t<$1>"
 		]
 	}
 }

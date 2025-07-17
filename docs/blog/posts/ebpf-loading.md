@@ -16,6 +16,10 @@ categories:
  
 <!-- more -->
 
+???+ ":rocket: Featured in"
+    - [eBPFChirp —The #1 eBPF newsletter on Substack](https://ebpfchirp.substack.com/p/testing-ebpf-program-compatibility?r=1m86sa)
+
+
 
 ## Reasoning
 

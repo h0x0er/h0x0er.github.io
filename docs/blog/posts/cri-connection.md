@@ -19,6 +19,11 @@ categories:
 
 <!-- more -->
 
+???+ ":rocket: Featured in "
+  	- Cilium's bi-weekly [eCHO News Episode #86](https://isovalent-9197153.hs-sites.com/echo-news-episode-86-ebpf-networking-at-bytedance.-installing-cilium-on-eks)
+  	- Hacker News [thread#44524430](https://news.ycombinator.com/item?id=44524430)
+  
+
 ---
 
 ##  Reasoning

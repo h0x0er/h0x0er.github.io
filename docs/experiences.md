@@ -20,7 +20,7 @@
 
 ---
 
-## **Software Developer (Part-Time) | [StepSecurity Inc.](https://www.stepsecurity.io/company) |**
+## **Software Developer (Part-Time) | [StepSecurity Inc.](https://www.stepsecurity.io/company)**
 
 > :timer: **April-2022 to June-2023**
 

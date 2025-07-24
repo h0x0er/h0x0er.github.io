@@ -20,7 +20,8 @@ nav:
   # - CTF: experiments/observations/ctf.md
   - About:
       - index.md
-      - "Work Experiences": experiences.md
+      - "Experiences": experiences.md
+      - "OpenSource Contrib.": oss.md
       - Achievements: achievements.md
 
 theme:

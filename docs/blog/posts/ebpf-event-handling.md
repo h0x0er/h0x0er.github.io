@@ -17,7 +17,7 @@ categories:
 
 ??? Note
     Currently only [tetragon](https://github.com/cilium/tetragon) project is covered.
-    
+
 <!-- more -->
 
 ## Reasoning
@@ -192,7 +192,7 @@ On calling `HandlePerfData()`;
 - it tries to find event-specific handler using `first-byte`
 - calls the handler for parsing raw-bytes
   
-**[[Source]](https://github.com/cilium/tetragon/blob/main/pkg/observer/observer.go#L87)**
+**[[Source]](https://github.com/cilium/tetragon/blob/500231c48fdbe567cf384acc2d2ece7763394632/pkg/observer/observer.go#L87)**
 
 ```go linenums="1" title="snippet5.go" hl_lines="2 5 15" 
 

@@ -20,7 +20,7 @@
 		"prefix": "start-log",
 		"body": [
 			"---",
-			"date: 2025-06-29",
+			"date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
 			"authors:",
 			" - jatin",
 			"draft: true",
@@ -54,6 +54,16 @@
 		"body": [
 			"???+ \"Source\"",
 			"\t<$1>"
+		]
+	},
+
+	"code-snippet":{
+		"scope": "markdown",
+		"prefix": "code-snippet",
+		"body": [
+			"```go linenums=\"1\" title=\"snippet.go\" hl_lines=\"1\" \n\n\n",
+			"$1",
+			"```"
 		]
 	}
 }

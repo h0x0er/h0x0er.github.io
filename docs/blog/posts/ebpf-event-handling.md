@@ -13,7 +13,7 @@ categories:
 ## Objective
 
 - to understand how eBPF-events are being handled in userspace in various open-source projects
-    - to learn their patterns for handling massive amount of events
+    - to learn their approach for handling massive amount of events
 
 ??? Note
     Currently only [tetragon](https://github.com/cilium/tetragon) project is covered.

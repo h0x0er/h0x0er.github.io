@@ -3,11 +3,11 @@ icon: material/bee-flower
 title: eBPF
 ---
 
-#### :arrow_right: for grabbing bpftool
+#### for grabbing bpftool
 
 When `sudo apt install bpftool` doesn't work 
 
-```bash linenums="1"
+```sh linenums="1"
 
 # For latest build follow below link
 # https://github.com/libbpf/bpftool/releases
@@ -20,9 +20,9 @@ chmod +x ./bpftool
 ```
 
 
-#### :arrow_right: for loading program
+#### for loading program
 
-```bash linenums="1"
+```sh linenums="1"
 
 sudo mount -t bpf bpffs /sys/fs/bpf
 sudo bpftool prog load ./sample.o /sys/fs/bpf/sample
@@ -30,14 +30,12 @@ sudo bpftool prog load ./sample.o /sys/fs/bpf/sample
 ```
 
 
-#### :arrow_right: for `bpf_printk()` logs
+#### for `bpf_printk()` logs
 
-```bash linenums="1"
-# to clear previous logs
-sudo echo > /sys/kernel/debug/tracing/trace
+```sh linenums="1"
 
-# print logs
-sudo cat /sys/kernel/debug/tracing/trace_pipe
+# with bpftool
+sudo bpftool prog tracelog
 
 # for k8s-debug pod
 echo > /host/sys/kernel/debug/tracing/trace
@@ -48,9 +46,9 @@ cat /host/sys/kernel/debug/tracing/trace_pipe
 - <https://unix.stackexchange.com/questions/747990/how-to-clear-the-sys-kernel-debug-tracing-trace-pipe-quickly>
 
 
-#### :arrow_right: for ebpf-lsm & kprobe-override status
+#### for ebpf-lsm & kprobe-override status
 
-```bash linenums="1"
+```sh linenums="1"
 
 # for ebpf-lsm
 cat /sys/kernel/security/lsm
@@ -59,5 +57,10 @@ cat /sys/kernel/security/lsm
 cat /boot/config-`uname -r` | grep CONFIG_BPF_KPROBE_OVERRIDE
 
 ```
+
+
+#### for observing performance of eBPF programs
+
+- <https://github.com/Netflix/bpftop>
 
 ---

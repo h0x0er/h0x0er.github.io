@@ -20,6 +20,9 @@ categories:
 
 <!-- more -->
 
+???+ ":rocket: Featured in "
+  	- Cilium's bi-weekly [eCHO News Episode #87](https://isovalent-9197153.hs-sites.com/echo-news-episode-87-tcp-in-udp-with-ebpf.-cilium-for-bare-metal)
+
 ## Reasoning
 
 
@@ -220,6 +223,129 @@ func HandlePerfData(data []byte) (byte, []Event, *HandlePerfError) {
         }
         return op, events, nil
 }
+
+
+```
+
+
+
+### Tracee
+
+As `Tracee` uses [libbpfgo](https://github.com/aquasecurity/libbpfgo) for loading eBPF objects, so there is a little difference in approach for `preparation and reading` of raw-data from perf/ring buffer. (extensive usage of go-channels)
+
+
+
+#### Preparation
+
+**[[Source]](https://github.com/aquasecurity/tracee/blob/23fdaf10bb100b97e89e98af4fe33a761dd2451a/pkg/ebpf/tracee.go#L1314-L1329)**
+
+PerfBuffer is initialized with `eventsChannel` a buffered-channel for receiving raw-event bytes.
+
+```go linenums="1" title="snippet.go" hl_lines="4 5 9 10 11 12 13 14" 
+...
+	// Initialize perf buffers and needed channels
+
+	t.eventsChannel = make(chan []byte, 1000)
+	t.lostEvChannel = make(chan uint64)
+	if t.config.PerfBufferSize < 1 {
+		return errfmt.Errorf("invalid perf buffer size: %d", t.config.PerfBufferSize)
+	}
+	t.eventsPerfMap, err = t.bpfModule.InitPerfBuf(
+		"events",
+		t.eventsChannel,
+		t.lostEvChannel,
+		t.config.PerfBufferSize,
+	)
+	if err != nil {
+		return errfmt.Errorf("error initializing events perf map: %v", err)
+	}
+...
+
+```
+
+
+#### Reading / Decoding
+
+**[[Source]](https://github.com/aquasecurity/tracee/blob/23fdaf10bb100b97e89e98af4fe33a761dd2451a/pkg/ebpf/events_pipeline.go#L31-L43)**
+
+
+Then `handleEvents()` is launched in a separate goroutine for handling all perf-events:
+
+- it further sends `eventsChannel` to [decodeEvents()](https://github.com/aquasecurity/tracee/blob/23fdaf10bb100b97e89e98af4fe33a761dd2451a/pkg/ebpf/events_pipeline.go#L168) 
+    - that reads raw-events & decodes them 
+    -  returns `eventsChan` for receiving decoded-events
+
+```go linenums="1" title="snippet2.go" hl_lines="5 13" 
+
+...
+// handleEvents is the main pipeline of tracee. It receives events from the perf buffer
+// and passes them through a series of stages, each stage is a goroutine that performs a
+// specific task on the event. The pipeline is started in a separate goroutine.
+func (t *Tracee) handleEvents(ctx context.Context, initialized chan<- struct{}) {
+	logger.Debugw("Starting handleEvents goroutine")
+	defer logger.Debugw("Stopped handleEvents goroutine")
+
+	var errcList []<-chan error
+
+	// Decode stage: events are read from the perf buffer and decoded into trace.Event type.
+
+	eventsChan, errc := t.decodeEvents(ctx, t.eventsChannel)
+	t.stats.Channels["decode"] = eventsChan
+	errcList = append(errcList, errc)
+
+	// Cache stage: events go through a caching function.
+
+...
+
+```
+
+#### Processing
+
+Events from `eventsChan` goes through several logical stages such as:
+
+- container enrichment
+- detection engine
+
+finally all events are handled by `sink stage` for printing/logging.
+
+**[[Source]](https://github.com/aquasecurity/tracee/blob/23fdaf10bb100b97e89e98af4fe33a761dd2451a/pkg/ebpf/events_pipeline.go#L43-L100)**
+
+```go linenums="1" title="snippet3.go" hl_lines="3 10 18 24 30 31" 
+
+	
+	// Process events stage: events go through a processing functions.
+
+	eventsChan, errc = t.processEvents(ctx, eventsChan)
+	t.stats.Channels["process"] = eventsChan
+	errcList = append(errcList, errc)
+
+	// Enrichment stage: container events are enriched with additional runtime data.
+
+	if !t.config.NoContainersEnrich { // TODO: remove safe-guard soon.
+		eventsChan, errc = t.enrichContainerEvents(ctx, eventsChan)
+		t.stats.Channels["enrich"] = eventsChan
+		errcList = append(errcList, errc)
+	}
+
+
+	// Derive events stage: events go through a derivation function.
+
+	eventsChan, errc = t.deriveEvents(ctx, eventsChan)
+	t.stats.Channels["derive"] = eventsChan
+	errcList = append(errcList, errc)
+
+	// Engine events stage: events go through the signatures engine for detection.
+
+	if t.config.EngineConfig.Mode == engine.ModeSingleBinary {
+		eventsChan, errc = t.engineEvents(ctx, eventsChan)
+		t.stats.Channels["engine"] = eventsChan
+		errcList = append(errcList, errc)
+	}
+
+	// Sink pipeline stage: events go through printers.
+	errc = t.sinkEvents(ctx, eventsChan)
+	t.stats.Channels["sink"] = eventsChan
+	errcList = append(errcList, errc)
 
 
 ```

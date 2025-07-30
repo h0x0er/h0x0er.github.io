@@ -15,8 +15,6 @@ categories:
 - to understand how eBPF-events are being handled in userspace in various open-source projects
     - to learn their approach for handling massive amount of events
 
-??? Note
-    Currently only [tetragon](https://github.com/cilium/tetragon) project is covered.
 
 <!-- more -->
 
@@ -25,6 +23,9 @@ categories:
 
 ## Reasoning
 
+
+??? Note
+    Snippets are take from  [cilium/tetragon](https://github.com/cilium/tetragon) and [aquasecurity/tracee](https://github.com/aquasecurity/tracee) projects.
 
 Once eBPF-events are written by the kernel-space hook in `ringBuffer or perfBuffer`, they become available for consumption from user-space.
 
@@ -352,6 +353,7 @@ finally all events are handled by `sink stage` for printing/logging.
 
 ## References
 - <https://github.com/cilium/tetragon>
+- <https://github.com/aquasecurity/tracee>
 - <https://nakryiko.com/posts/bpf-ringbuf/>
 - <https://docs.ebpf.io/linux/map-type/BPF_MAP_TYPE_RINGBUF/>
 - <https://docs.ebpf.io/linux/map-type/BPF_MAP_TYPE_PERF_EVENT_ARRAY/>

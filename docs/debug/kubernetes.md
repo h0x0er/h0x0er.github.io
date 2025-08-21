@@ -23,4 +23,4 @@ kubectl debug $nodeName -it --image=ubuntu --profile=sysadmin
 
 #### for exploring specs
 
-- https://kubespec.dev/
+- <https://kubespec.dev/>

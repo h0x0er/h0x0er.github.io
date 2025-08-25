@@ -5,12 +5,19 @@ copyright: Copyright &copy; 2025 JATIN KUMAR
 
 nav:
   - index.md
+  - About:
+      - index.md
+      - "Experiences": experiences.md
+      - "OpenSource Contrib.": oss.md
+      - Achievements: achievements.md
   - Logs:
       - blog/index.md
   - Debug:
       # - debug/index.md
       - debug/ebpf.md
       - debug/kubernetes.md
+  - Notes:
+    - notes/bots_and_webhooks.md
 
   # - Experiments:
   #     - experiments/index.md
@@ -18,11 +25,6 @@ nav:
   # - Observations:
   # - experiments/observations/index.md
   # - CTF: experiments/observations/ctf.md
-  - About:
-      - index.md
-      - "Experiences": experiences.md
-      - "OpenSource Contrib.": oss.md
-      - Achievements: achievements.md
 
 theme:
   name: material

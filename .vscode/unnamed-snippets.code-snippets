@@ -61,8 +61,8 @@
 		"scope": "markdown",
 		"prefix": "code-snippet",
 		"body": [
-			"```go linenums=\"1\" title=\"snippet.go\" hl_lines=\"1\" \n\n\n",
-			"$1",
+			"```${1:go} linenums=\"1\" title=\"snippet.$1\" hl_lines=\"1\" \n\n\n",
+			"$2",
 			"```"
 		]
 	}

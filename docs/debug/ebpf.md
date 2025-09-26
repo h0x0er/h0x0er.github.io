@@ -30,7 +30,7 @@ sudo bpftool prog load ./sample.o /sys/fs/bpf/sample
 ```
 
 
-#### for `bpf_printk()` logs
+#### for reading logs
 
 ```sh linenums="1"
 
@@ -59,8 +59,22 @@ cat /boot/config-`uname -r` | grep CONFIG_BPF_KPROBE_OVERRIDE
 ```
 
 
-#### for observing performance of eBPF programs
+#### for observing performance of hooks/programs
 
 - <https://github.com/Netflix/bpftop>
+
+
+#### for CO-RE guide
+
+- <https://nakryiko.com/tags/bpf/>
+
+
+#### for checking available features
+
+```bash linenums="1"
+
+sudo bpftool feature
+
+```
 
 ---

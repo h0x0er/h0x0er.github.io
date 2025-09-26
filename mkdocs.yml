@@ -18,6 +18,7 @@ nav:
       - debug/kubernetes.md
   - Notes:
     - notes/bots_and_webhooks.md
+    - notes/loop-device.md
 
   # - Experiments:
   #     - experiments/index.md

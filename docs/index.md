@@ -6,8 +6,6 @@ hide:
 
 Hello :wave: !
 
-Welcome to my space of internet !
-
 I'm  __Jatin Kumar__.  Currently working as **Software Engineer [@StepSecurity Inc.](https://www.stepsecurity.io)**
 
 At StepSecurity, I spent most of my time creating, debugging & improving `Agents`.

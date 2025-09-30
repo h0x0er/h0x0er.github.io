@@ -17,15 +17,9 @@ nav:
       - debug/ebpf.md
       - debug/kubernetes.md
   - Notes:
-    - notes/bots_and_webhooks.md
-    - notes/loop-device.md
+      - notes/bots_and_webhooks.md
+      - notes/loop-device.md
 
-  # - Experiments:
-  #     - experiments/index.md
-  # - eBPF: experiments/exp_ebpf.md
-  # - Observations:
-  # - experiments/observations/index.md
-  # - CTF: experiments/observations/ctf.md
 
 theme:
   name: material
@@ -34,6 +28,7 @@ theme:
     - announce.dismiss
     - content.action.edit
     - content.action.view
+    # - content.tabs.link
 
     - content.code.annotate
     - content.code.copy
@@ -92,6 +87,9 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -103,6 +101,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
+  - search
   - blog:
       post_date_format: full
       pagination_per_page: 5

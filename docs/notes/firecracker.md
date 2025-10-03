@@ -10,6 +10,10 @@ Follow most of the steps from `get-started` to spin-up a minimal VM
 - https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
 
 
+## to undersand tuntap
+
+- https://www.packetcoders.io/virtual-networking-devices-tun-tap-and-veth-pairs-explained/
+
 ##  to understand `ip route`
 
 this is used for configuring networking inside VM

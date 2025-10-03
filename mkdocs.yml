@@ -80,7 +80,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.blocks.caption
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      repo_url_shortener: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

@@ -5,7 +5,7 @@
 - to send messages on telegram channel using telegram-api, with bot-account
 
 
-**flow**
+### flow
 
 - create bot using `bot_father`, and save the access_token
     - edit bot's permission to give it ability to interact with `channels`
@@ -20,32 +20,47 @@
 
 >  always prefix channel_id with `-100`
 
+### sample 
+
 ```sh linenums="1"
 
 $tele_base="https://api.telegram.org/bot<YOUR_BOT_TOKEN>"
 
-curl -s -XPOST "$tele_base/sendMessage\
-     -H "content-type:application/json"\
+curl -s -XPOST "$tele_base/sendMessage" \
+     -H "content-type:application/json" \
      -d '{"chat_id":"-1003051237226", "text":"text to private channel"}' | jq
 ```
 
 
-**refer**
+### refer
 
 - <https://core.telegram.org/bots/tutorial>
 - <https://core.telegram.org/bots/api#sendmessage>
 
+
 ## discord-webhook
 
 
-**flow**
+### flow
 
 - create new channel, and then click on edit-channel
 - click on integration and then click webhooks
 - click `new-webhook` and copy the url
 
 
+### sample
 
-**refer**
+Send webhook on a thread
+
+```sh linenums="1"
+
+hook_url=""
+curl -XPOST "$hook_url?thread_id=" -H "content-type:application/json" \
+    -d "{\"content\":\"test\"}"
+
+```
+
+
+### refer
 
 - <https://discord.com/developers/docs/resources/webhook#execute-webhook>

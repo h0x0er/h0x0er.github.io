@@ -19,8 +19,9 @@ nav:
   - Notes:
       - notes/bots_and_webhooks.md
       - notes/loop-device.md
-      - notes/firecracker.md
       - notes/build-kernel.md
+      - notes/firecracker.md
+      - notes/qemu.md
 
 theme:
   name: material

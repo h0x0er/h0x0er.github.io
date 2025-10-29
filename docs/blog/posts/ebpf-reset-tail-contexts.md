@@ -30,7 +30,8 @@ Following techniques can be used
 
 
 2. By writing `null_bytes` in `tail-context`
-      - requires additional `read-only` map containing null-bytes. 
+      - requires additional `read-only` map containing null-bytes
+      - can reset context of any size
 
 3. Using `for-loop`
       - using this can sometimes lead to `instructions limit exceeded error`

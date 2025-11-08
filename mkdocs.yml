@@ -16,6 +16,7 @@ nav:
       # - debug/index.md
       - debug/ebpf.md
       - debug/kubernetes.md
+      - debug/go.md
   - Notes:
       - notes/bots_and_webhooks.md
       - notes/loop-device.md

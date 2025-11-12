@@ -21,14 +21,12 @@ go func() {
 
 ### cpu-profile: 30s
 ```
-go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30
-
+go tool pprof "http://localhost:6060/debug/pprof/profile?seconds=30"
 ```
 
 then to see topN methods, type
 ```
 top5
-
 ```
 
 for help, type
@@ -36,6 +34,10 @@ for help, type
  help 
 ```
 
+start web-server (make sure graphviz is installed)
+```
+go tool pprof -http=:8080 "http://localhost:6060/debug/pprof/profile?seconds=30"
+```
 
 
 ### to access profiles: command-line

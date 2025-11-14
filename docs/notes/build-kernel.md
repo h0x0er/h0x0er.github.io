@@ -1,4 +1,4 @@
-# Build Kernel
+# **Build Kernel**
 
 On following build steps, a vmlinux binary of about 30MB will get built. It can be used with firecracker-vm by specifying in [`kernel_image_path`](./firecracker.md#vm-template).
 

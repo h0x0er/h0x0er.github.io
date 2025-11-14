@@ -1,7 +1,8 @@
 ---
 icon: material/bee-flower
-title: eBPF
 ---
+
+# **eBPF**
 
 #### for grabbing bpftool
 

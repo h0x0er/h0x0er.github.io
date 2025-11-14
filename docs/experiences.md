@@ -1,3 +1,10 @@
+---
+hide:
+    - footer
+    - toc
+---
+
+# **Experiences**
 
 ## **Software Engineer (Full-time) | [StepSecurity Inc.](https://www.stepsecurity.io/company)**
 
@@ -5,18 +12,25 @@
 > :timer: **July-2023 to Present**
 
     
-- Responsible for `R&D` of eBPF-based solutions for `network, process and file visibility` and `policy-enforcement`.
+- Responsible for `R&D` of eBPF-based solutions for Linux based CI/CD environments. Capable of 
+    - Runtime monitoring of `network-activity, process-activity and file-operations activity`. 
+    - Runtime policy-enforcement at DNS and IP-layer to prevent exfiltration of information.
+
+- Leading the `R&D of eBPF based armour` to detect/protect security-agents from tampering attacks.
+ 
+- Led the porting of runtime-security solution to K8s environment for [ARC-based](https://github.com/actions/actions-runner-controller) self-hosted runners.
+  
+- Still contributing/maintaining [Harden-Runner](https://github.com/step-security/harden-runner).
+  
+<!-- 
 
 - Designed, developed and maintaining a portable eBPF based module with following capabilities, 
     - traces every `outgoing network-packet`
     - traces every `dns-resolution`
     - can be configured to act as `policy-based firewall` such that it,
         - `blocks dns-resolutions` not in allow-policy
-        - `blocks ip-connections` not in allow-policy
-
-- Leading the `R&D of eBPF based armour` to detect/protect agents from tampering attacks.
-
-- Still contributing/maintaining [Harden-Runner](https://github.com/step-security/harden-runner).
+        - `blocks ip-connections` not in allow-policy 
+-->
 
 ---
 
@@ -24,7 +38,6 @@
 
 > :timer: **April-2022 to June-2023**
 
-- Responsible for porting runtime-security solution to [ARC-based](https://github.com/actions/actions-runner-controller) self-hosted runners.
 
 - Implemented `eBPF-based` HTTPS traffic interception capability in agent.
 

@@ -1,7 +1,8 @@
 ---
-title: Kubernetes
 icon: material/kubernetes
 ---
+
+# **Kubernetes**
 
 !!! note "Official Doc"
     <https://kubernetes.io/docs/tasks/debug/debug-cluster/>

@@ -1,9 +1,10 @@
 ---
 icon: fontawesome/brands/golang
-title: Go
 ---
 
-## Profiling
+# **Go**
+
+## **Profiling**
 
 !!! note "Official Doc"
     https://pkg.go.dev/net/http/pprof

@@ -4,7 +4,7 @@ site_author: jatin
 copyright: Copyright &copy; 2025 JATIN KUMAR
 
 nav:
-  - index.md
+  # - index.md
   - About:
       - index.md
       - "Experiences": experiences.md
@@ -53,9 +53,9 @@ theme:
     # - toc.integrate
 
   icon:
-    annotation: material/thought-bubble
-    logo: material/thought-bubble
-  favicon: images/cloud.png
+    annotation: material/memory
+    logo: material/memory
+  favicon: images/memory.svg
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

@@ -2,20 +2,27 @@
 title: ""
 hide:
     - footer
+    - toc
 ---
 
-Hello :wave: !
+# **About me**
 
-I'm  __Jatin Kumar__.  Currently working as **Software Engineer [@StepSecurity Inc.](https://www.stepsecurity.io)**
+## **I am `Jatin Kumar`**
+### **Software Engineer [@StepSecurity Inc.](https://www.stepsecurity.io/)**
 
-At StepSecurity, I spent most of my time creating, debugging & improving `Agents`.
-They are EDR like softwares that are purpose built for securing CI/CD pipeline runners from `SolarWinds and tj-actions` like software-supply-chain attacks. [Harden-Runner](https://github.com/step-security/harden-runner) is one of the widely used open-source variant specifically developed for `Github Actions.`
+### *Where I spent most of my time engineering, debugging & enhancing `Security Agents`.*
 
-Off job, I spent time exploring new-things, reading or experimenting.
+### *They are EDR like softwares that are purpose built for securing CI/CD pipeline runners from `SolarWinds and tj-actions` like software-supply-chain attacks. [Harden-Runner](https://github.com/step-security/harden-runner) is one of the widely used (> 9.3k users) open-source variant specifically developed for `Github Actions.`*
 
-Thanks !
 
-Reach out to me on [Linkedin...:rocket:](https://www.linkedin.com/in/jatin-kumar-0a3755168/)
+
+### *Off job, I spent time exploring new-things, reading or experimenting.*
+
+
+### *Reach out to me on [Linkedin](https://www.linkedin.com/in/jatin-kumar-0a3755168/) or jatin[dot]experiment001[dot]gmail[dot]com*
+
+
+### **Thanks**
 
 !!! note
-    `Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.
+    ### **`Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.**

@@ -20,7 +20,7 @@ hide:
  
 - Led the porting of runtime-security solution to K8s environment for [ARC-based](https://github.com/actions/actions-runner-controller) self-hosted runners.
   
-- Still contributing/maintaining [Harden-Runner](https://github.com/step-security/harden-runner).
+- Maintaining [Harden-Runner](https://github.com/step-security/harden-runner).
   
 <!-- 
 

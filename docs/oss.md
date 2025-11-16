@@ -1,7 +1,7 @@
 
 # **Opensource Contributions**
 
-## [gojue/ecapture](https://github.com/gojue/ecapture)
+## [**gojue/ecapture**](https://github.com/gojue/ecapture)
 
 - [ISSUE-443:](https://github.com/gojue/ecapture/issues/433) Investigated memory-leak occurring in creating perCPUBuffer for eBPF sensors
 
@@ -16,12 +16,12 @@
 
 ---
 
-## [ossf/scorecard](https://github.com/ossf/scorecard})
+## [**ossf/scorecard**](https://github.com/ossf/scorecard})
 
 - [PR-2278:](https://github.com/ossf/scorecard/pull/2278) Investigated and fixed a bug causing miscalculation of scores for private GitHub repositories.
 
 --- 
 
-## [ossf/package-analysis](https://github.com/ossf/package-analysis)
+## [**ossf/package-analysis**](https://github.com/ossf/package-analysis)
 
 - [PR-978:](https://github.com/ossf/package-analysis/pull/978) Refactored static-analysis result struct to include SHA256 checksum of the target archive

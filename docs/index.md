@@ -7,7 +7,7 @@ hide:
 
 # **About me**
 
-## **I am `Jatin Kumar`**
+## **I am `Jatin Kumar`.**
 ### **Software Engineer [@StepSecurity Inc.](https://www.stepsecurity.io/)**
 
 ### *Where I spent most of my time engineering, debugging & enhancing `Security Agents`.*

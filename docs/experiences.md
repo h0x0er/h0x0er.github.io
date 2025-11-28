@@ -14,7 +14,7 @@ hide:
     
 - Responsible for `R&D` of eBPF-based solutions for Linux based CI/CD environments. Capable of 
     - Runtime monitoring of `network-activity, process-activity and file-operations activity`. 
-    - Runtime policy-enforcement at DNS and IP-layer to prevent exfiltration of information.
+    - Runtime policy-enforcement at DNS and IP-level to prevent exfiltration of information.
 
 - Leading the `R&D of eBPF based armour` to detect/protect security-agents from tampering attacks.
  

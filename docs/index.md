@@ -26,4 +26,3 @@ hide:
 
 !!! note
     ### **`Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.**
-~~~~

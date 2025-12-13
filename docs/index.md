@@ -19,10 +19,11 @@ hide:
 ### *Off job, I spent time exploring new-things, reading or experimenting.*
 
 
-### *Reach out to me on [Linkedin](https://www.linkedin.com/in/jatin-kumar-0a3755168/) or jatin[dot]experiment001[dot]gmail[dot]com*
+### *Reach out to me on [Linkedin](https://www.linkedin.com/in/jatin-kumar-0a3755168/) or [Email](mailto://jatin.boring273@passmail.net)*.
 
 
-### **Thanks**
+### **Thanks !**
 
 !!! note
     ### **`Unnamed Memories` is a centralized repo of my notes, logs, experiences and more.**
+~~~~

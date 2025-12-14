@@ -24,6 +24,7 @@ nav:
       - notes/build-kernel.md
       - notes/firecracker.md
       - notes/qemu.md
+      - notes/macos-security.md
 
 theme:
   name: material

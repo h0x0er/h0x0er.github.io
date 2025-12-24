@@ -3,16 +3,16 @@
 
 ## [**gojue/ecapture**](https://github.com/gojue/ecapture)
 
-- [ISSUE-443:](https://github.com/gojue/ecapture/issues/433) Investigated memory-leak occurring in creating perCPUBuffer for eBPF sensors
+- [PR-882:](https://github.com/gojue/ecapture/pull/882) Identified and fixed `OOB-read` bug in gotls-tracing logic causing silent drop of kernel-events.  
+    - Bug report https://github.com/gojue/ecapture/issues/881
 
-- [PR-438:](https://github.com/gojue/ecapture/pull/438) Reduced memory consumption in OPENSSL version detection logic by refactoring the existing logic to use fixed-buffer.
+- [ISSUE-443:](https://github.com/gojue/ecapture/issues/433) Investigated memory-leak occurring in creating perCPUBuffer for eBPF sensors.
 
-- [PR-426:](https://github.com/gojue/ecapture/pull/426) Implemented support for capturing HTTPS traffic from stripped Go binaries resulting in improved inspection of traffic.
+- [PR-438:](https://github.com/gojue/ecapture/pull/438) Reduced memory consumption in OpenSSL version detection logic by refactoring the existing logic to use fixed-buffer.
+
+- [PR-426:](https://github.com/gojue/ecapture/pull/426) Extened support for capturing HTTPS traffic from stripped Go binaries resulting in improved inspection of traffic.
   
-- [PR-418:](https://github.com/gojue/ecapture/pull/418) Implemented support for decoding kernel-time received from eBPF event to user-time resulting in accurate event-timestamp.
-
-
-
+- [PR-418:](https://github.com/gojue/ecapture/pull/418) Implemented support for decoding kernel-space time received from eBPF event to user-space time resulting in accurate event-timestamp.
 
 ---
 

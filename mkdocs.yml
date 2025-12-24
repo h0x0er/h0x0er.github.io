@@ -8,7 +8,7 @@ nav:
   - About:
       - index.md
       - "Experiences": experiences.md
-      - "OpenSource Contrib.": oss.md
+      - "OpenSource Contribution": oss.md
       - Achievements: achievements.md
   - Logs:
       - blog/index.md

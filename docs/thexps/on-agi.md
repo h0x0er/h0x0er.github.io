@@ -8,7 +8,7 @@ hide:
 
 ## **Initial thought**
 
-if `birds` inspired the concept of `Planes`; what about `human-intelligence` inspired `AGI` ?
+if `birds` inspired the concept of `Planes`; what about `AGI` inspired by `human-intelligence` ?
 
 ## **Questions**
 

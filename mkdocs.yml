@@ -1,7 +1,7 @@
 site_name: Unnamed Memories
 site_url: https://h0x0er.github.io/
 site_author: jatin
-copyright: Copyright &copy; 2025 JATIN KUMAR
+copyright: Copyright &copy; 2025 - 2026 Jatin Kumar
 
 nav:
   # - index.md
@@ -24,7 +24,10 @@ nav:
       - notes/build-kernel.md
       - notes/firecracker.md
       - notes/qemu.md
-      - notes/macos-security.md
+      - notes/macos-systemextension.md
+
+  - "Thought Experiments":
+      - thexps/on-agi.md
 
 theme:
   name: material
@@ -128,6 +131,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/h0x0er
 
-  analytics:
-    provider: google
-    property: G-V6KWCXGLJD
+ analytics:
+   provider: google
+   property: G-V6KWCXGLJD

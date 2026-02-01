@@ -25,6 +25,7 @@ nav:
       - notes/firecracker.md
       - notes/qemu.md
       - notes/macos-systemextension.md
+      - notes/code-reading.md
 
   - "Thought Experiments":
       - thexps/on-agi.md

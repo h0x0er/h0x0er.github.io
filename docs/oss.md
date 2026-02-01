@@ -10,7 +10,7 @@
 
 - [PR-438:](https://github.com/gojue/ecapture/pull/438) Reduced memory consumption in OpenSSL version detection logic by refactoring the existing logic to use fixed-buffer.
 
-- [PR-426:](https://github.com/gojue/ecapture/pull/426) Extened support for capturing HTTPS traffic from stripped Go binaries resulting in improved inspection of traffic.
+- [PR-426:](https://github.com/gojue/ecapture/pull/426) Extended support for capturing HTTPS traffic from stripped Go binaries resulting in improved inspection of traffic.
   
 - [PR-418:](https://github.com/gojue/ecapture/pull/418) Implemented support for decoding kernel-space time received from eBPF event to user-space time resulting in accurate event-timestamp.
 

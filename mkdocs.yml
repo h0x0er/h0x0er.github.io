@@ -29,7 +29,8 @@ nav:
 
   - "Thought Experiments":
       - thexps/on-agi.md
-
+      - thexps/exp-reading.md
+      - thexps/flow-of-thoughts.md
 theme:
   name: material
   # custom_dir: overrides

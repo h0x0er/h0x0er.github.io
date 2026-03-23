@@ -26,6 +26,7 @@ nav:
       - notes/qemu.md
       - notes/macos-systemextension.md
       - notes/code-reading.md
+      - notes/linux-kernel-dev.md
 
   - "Thought Experiments":
       - thexps/on-agi.md

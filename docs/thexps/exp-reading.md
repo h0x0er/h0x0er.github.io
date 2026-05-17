@@ -8,7 +8,7 @@ hide:
 
 ## **Thought**
 
-- What: How can I do experiments with reading ?
+- What: How to do experiments with reading ?
 - Why: 
 	- to understand how to do reading
 	- to know/find/learn different ways of reading different things
@@ -17,13 +17,12 @@ hide:
 - What different things
 	- reading for the purpose of experiments
 	- reading as part of experiment
-	- reading books, articles, codes
-	- reading humans !!
-	- reading face !!
-	- reading emotions !!!
-	- reading stars
-	- reading hands !!
-	- reading maps ?
+	- reading books, articles, codes - to understand theory
+	- reading humans - to observe behaviour
+	- reading face - to observe to emotions
+	- reading emotions
+	- reading stars - the patterns
+	- reading maps 
 	- reading the situation (as part of OODA(Observe, Orient, Decide, Act) loop)
 
 - How to experiment while reading or with reading
@@ -40,4 +39,4 @@ hide:
 
 ## Refer
 
-- book: How to read a book 
+- book: How to read a book

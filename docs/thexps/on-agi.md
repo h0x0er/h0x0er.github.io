@@ -18,4 +18,3 @@ if `birds` inspired the concept of `Planes`; what about `AGI` inspired by `human
 - How it will interact with other AGI agents ?
 
 ## **Train of Thoughts**
-

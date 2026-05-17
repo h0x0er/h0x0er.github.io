@@ -29,7 +29,7 @@ nav:
       - notes/linux-kernel-dev.md
 
   - "Thought Experiments":
-      - thexps/on-agi.md
+      # - thexps/on-agi.md
       - thexps/exp-reading.md
       - thexps/flow-of-thoughts.md
 theme:

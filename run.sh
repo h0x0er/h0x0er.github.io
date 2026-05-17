@@ -2,4 +2,4 @@
 
 set -x
 
-mkdocs serve
+mkdocs serve --livereload

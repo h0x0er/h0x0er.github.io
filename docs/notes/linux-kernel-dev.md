@@ -20,3 +20,11 @@
 ## about kthreads
 
 - https://c-pointers.com/LinuxDeviceDriver/basic_ldd/chapter2_kthreads/p1_createKthread.html
+
+## lwn index 
+
+- https://lwn.net/Kernel/Index/
+
+## some books
+
+- https://lwn.net/Kernel/Index/#Books

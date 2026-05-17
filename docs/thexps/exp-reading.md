@@ -11,7 +11,7 @@ hide:
 - What: How can I do experiments with reading ?
 - Why: 
 	- to understand how to do reading
-	- to know/find/learn different ways to read different things
+	- to know/find/learn different ways of reading different things
 
 
 - What different things
@@ -24,7 +24,7 @@ hide:
 	- reading stars
 	- reading hands !!
 	- reading maps ?
-	- reading the situation (as part of OODA loop)
+	- reading the situation (as part of OODA(Observe, Orient, Decide, Act) loop)
 
 - How to experiment while reading or with reading
 

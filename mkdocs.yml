@@ -25,13 +25,15 @@ nav:
       - notes/firecracker.md
       - notes/qemu.md
       - notes/macos-systemextension.md
-      - notes/code-reading.md
       - notes/linux-kernel-dev.md
+      - notes/harness-eng.md
 
-  - "Thought Experiments":
-      # - thexps/on-agi.md
-      - thexps/exp-reading.md
-      - thexps/flow-of-thoughts.md
+  - Misc:
+      - misc/problem-finding.md
+      - misc/code-reading.md
+      # - misc/on-agi.md
+      - misc/exp-reading.md
+      - misc/flow-of-thoughts.md
 theme:
   name: material
   # custom_dir: overrides

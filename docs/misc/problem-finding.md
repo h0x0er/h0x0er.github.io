@@ -65,10 +65,11 @@ Where to observe, ask for, query for
 **books:**
 
   - A More Beautiful Question
-  - Problem Seeking
+  - Problem Seeking : https://www.academia.edu/37336896/PROBLEM_SEEKING
 
 ## References
 
+- https://robinkwong.com/problem-seeking/
 - https://www.linkedin.com/advice/1/how-can-you-identify-problems-obvious-skills-critical-thinking-uck9c
 - https://www.productfoundry.co/articles/how-to-find-problems-to-solve
 - https://www.reddit.com/r/Entrepreneur/comments/18g0otn/how_do_i_find_a_real_problem_that_i_can_solve

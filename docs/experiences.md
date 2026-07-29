@@ -11,7 +11,8 @@ hide:
 
 > :timer: **July-2023 to Present**
 
-    
+- Developed runtime-security agent for MacOS based machines using EndpointSecurity Framework and Network Filters for gaining visibility into process execution, file operations activity, DNS resolutions and network activity.
+
 - Designed and owned eBPF‑based runtime agents that monitor process execution, DNS/IP‑level network activity, and file operations in
 CI/CD environments, and enforce runtime policies at DNS and IP levels to mitigate real‑world supply‑chain attacks.
 

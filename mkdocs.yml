@@ -31,9 +31,11 @@ nav:
   - Misc:
       - misc/problem-finding.md
       - misc/code-reading.md
+      - misc/agentic-coding.md
+      - misc/product-building.md
       # - misc/on-agi.md
-      - misc/exp-reading.md
-      - misc/flow-of-thoughts.md
+      # - misc/exp-reading.md
+      # - misc/flow-of-thoughts.md
 theme:
   name: material
   # custom_dir: overrides
